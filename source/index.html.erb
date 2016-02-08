@@ -1,10 +1,20 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Airbnb home
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<%= partial "banner" %>
+
+<%= partial "feature" %>
+
+<%= partial "card" %>
+
+<div class="text-center padded" id="newsletter">
+  <h2>Get news from us</h2>
+  <p>Leave us your mail and get news from us</p>
+  <form class="form-inline">
+    <input type="email" placeholder="bob@gmail.com" class="form-control">
+    <input type="submit" value="Subscribe" class="btn btn-primary">
+  </form>
 </div>
+
+<%= partial "map" %>
